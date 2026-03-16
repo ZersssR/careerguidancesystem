@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span{
+    font-size: .9rem;
+    color: #666
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fffacd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav img{
+    width: auto;
+    height:28px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+    
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav .navigation ul li a:hover{
+    color: #7851a9;
+}
+
+footer{
+    background-color:#fffacd;
+    padding: 6vw 8vw 6vw 8vw;
+}
+footer .box-container{
+    display: flex;
+    flex-wrap:wrap;
+    gap:1.5rem;
+}
+
+footer .box-container .box{
+    flex:1 1 25rem;
+    
+}
+
+footer .box-container .box h3{
+    color:#333;
+    font-size:1.7rem;
+    padding:1rem 0;
+    
+}
+
+footer .box-container .box a{
+    display:block;
+    color:#666;
+    font-size: 1rem;
+    padding:0.5rem 0;
+}
+
+footer .box-container .box a:hover{
+    color:var(--thisle);
+    text-decoration:underline;
+}
+
+footer .credit{
+    text-align:center;
+    padding:1.5rem;
+    margin-top: 1.5rem;
+    padding-top:2.5rem;
+    font-size:1.5rem;
+    color:#333;
+    border-top:.1rem solid rgba(0,0,0,.1);
+    
+}
+
+footer .credit .fa-copyright{
+    color:blue;
+}
+
+footer .credit .fa-heart{
+    color:var(--thisle);
+}
+
+footer .credit span{
+    color:var(--thisle);
+}
+
+
+#home{
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("c3bg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+    
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fffacd;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.yellow{
+    color: black;
+    background: rgb(255, 250, 205);
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+    color: rgb(255, 250, 205);
+    background: black;
+}
+
+#home a.purple{
+    color: black;
+    background: rgb(204, 204, 255);
+    transition: 0.3s ease;
+}
+
+#home a.purple:hover {
+    color: rgb(204, 204, 255);
+    background: black;
+}
+
+#login{
+    padding: 4vw 25vw 6vw 25vw;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("purplebg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login .wrapper{
+    padding: 6vw 8vw 6vw 8vw;
+}
+
+#login .reminder{
+    color: #7851a9;
+    text-align: center;
+}
+
+#login .reminder h1{
+    color: #7851a9
+}
+
+#login .form{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#login .form .frg{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#login .form input{
+    margin: 8px 0;
+    padding: 5px 3px;
+    border: 1px solid rgb(204, 204, 255);
+    outline: none;
+}
+
+#login .form .option{
+    margin: 8px 0;
+    padding: 5px 3px;
+    border: 1px solid rgb(204, 204, 255);
+    outline: none;
+}
+
+#login .form .btn{
+    margin-top: 20px;
+}
+
+#login .button{
+    color: black;
+    background: rgb(204, 204, 255);
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 5px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login .button:hover {
+    color: black;
+    background: #fffacd
+}
+
+#roles{
+    padding: 6vw 8vw 6vw 8vw;
+    text-align: center;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("purplebg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#roles .fea-base{
+    display: inline-flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 50px;
+}
+
+#roles .fea-box{
+    background: #dcd0ff;
+    text-align: center;
+    width: 60%;
+}
+
+#roles  img{
+    width: 250px;
+}
+
+#roles .icons  a{
+    color: black;
+    padding: 13px 0 7px 0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+#roles .icons a:hover{
+    color: #7851a9;
+}
+
+#test{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("purplebg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container{
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+.hantar{
+    color: black;
+    background: rgb(204, 204, 255);
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hantar:hover{
+    color: black;
+    background: #fffacd;
+}
+
+#registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("purplebg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#result{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url("purplebg.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#registration .reminder{
+    color: #fff;
+}
+
+#registration .reminder h1{
+    color: #fff;
+}
+
+#registration .form{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    width: 40%;
+}
+
+#registration .form .frg{
+    width: 100%;
+}
+
+#registration .form input{
+    margin: 8px 0;
+    padding: 5px 3px;
+    border: 1px solid rgb(204, 204, 255);
+    outline: none;
+}
+
+#registration .form .option{
+    margin: 8px 0;
+    padding: 5px 3px;
+    border: 1px solid rgb(204, 204, 255);
+    outline: none;
+}
+
+#registration .form .btn{
+    margin-top: 20px;
+}
+
+#registration .button{
+    color: black;
+    background: rgb(204, 204, 255);
+    transition: 0.3s ease;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registration .button:hover {
+    color: black;
+    background: #fffacd
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fffacd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav img{
+    width: auto;
+    height:28px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+    
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav .navigation ul li a:hover{
+    color: #7851a9;
+}
+
+.reminderss{
+    background: #fffacd;
+    padding: 6vw 8vw 6vw 8vw;
+    border-radius: 3%;
+}
+
+.reminderrr{
+    color: black;
+    text-align: center;
+}
+
+.details{
+    padding: 6vw 8vw 6vw 8vw;
+}
+
+.isi{
+    background: #fffacd;
+    border-radius: 3%;
+}
