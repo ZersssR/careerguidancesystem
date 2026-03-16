@@ -102,7 +102,13 @@ http://localhost/careerguidancesystem
 Screenshots
 
 
+![Student Dashboard](cg_dashboard.png)
+![Assessment Page](cg_question.png)
+![Result Page](cg_result.png)
+![Teacher Dashboard](cg_teacherdashboard.png)
+
 Future Improvements
+
 
 Add more career datasets and recommendation rules
 
@@ -114,10 +120,15 @@ Integrate machine learning for smarter career prediction
 
 Add analytics dashboard for counselors
 
+
+
 Author
 
 Syu
+
 Bachelor of Computer Science (Software Development)
+
+
 
 License
 
